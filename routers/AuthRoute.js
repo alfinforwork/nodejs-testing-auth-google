@@ -28,7 +28,7 @@ router.get('/auth/failed',
 );
 router.get('/auth/good', isLoggedIn,
     (req, res) => {
-        res.status(200).json(format_json(false, `Selamat datang ${req.user.displayName}`))
+        res.status(200).json(format_json(true, `Selamat datang ${req.user.displayName}`))
     }
 );
 
